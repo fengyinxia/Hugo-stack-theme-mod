@@ -2,7 +2,7 @@
 title: "React项目（仿airbnb）"
 date: 2024-02-13T03:02:52+08:00
 lastmod: 2024-02-13T03:02:52+08:00
-description: 问的人比较多，我又比较懒，干脆做了一套样板间。
+description: 掘金搬运的，这项目是对 React 知识点一个全面的练习和汇总
 tags:
   - 技术
 categories:
