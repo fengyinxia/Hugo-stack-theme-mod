@@ -33,6 +33,44 @@
     display: none;
   }
 }
+.highlight {
+  max-width: 102% !important;
+  background-color: var(--pre-background-color);
+  padding: var(--card-padding);
+  position: relative;
+  border-radius: 20px;
+  margin-left: -7px !important;
+  margin-right: -12px;
+  box-shadow: var(--shadow-l1) !important;
+
+  &:hover {
+    .copyCodeButton {
+      opacity: 1;
+    }
+  }
+
+  // keep Codeblocks LTR
+  [dir="rtl"] & {
+    direction: ltr;
+  }
+
+  pre {
+    margin: initial;
+    padding: 0;
+    margin: 0;
+    width: auto;
+  }
+}
+
+// light模式下的代码块样式调整
+[data-scheme="light"] .article-content .highlight {
+  background-color: #fff9f3;
+}
+
+[data-scheme="light"] .chroma {
+  color: #ff6f00;
+  background-color: #fff9f3cc;
+}
 
 // .widget {
 //     max-height: 100vh;
