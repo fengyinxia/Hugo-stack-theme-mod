@@ -1,4 +1,27 @@
 /* Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss */
+:root {
+  // 全局顶部边距
+  --main-top-padding: 30px;
+  // 全局卡片圆角
+  --card-border-radius: 25px;
+  // 标签云卡片圆角
+  --tag-border-radius: 8px;
+  // 卡片间距
+  --section-separation: 40px;
+  // 全局字体大小
+  --article-font-size: 1.8rem;
+  // 行内代码背景色
+  --code-background-color: #f8f8f8;
+  // 行内代码前景色
+  --code-text-color: #e96900;
+  // 暗色模式下样式
+  &[data-scheme="dark"] {
+    // 行内代码背景色
+    --code-background-color: #ff6d1b17;
+    // 行内代码前景色
+    --code-text-color: #e96900;
+  }
+}
 
 .right-sidebar {
   max-height: 100vh;
