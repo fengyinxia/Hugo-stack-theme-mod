@@ -71,7 +71,15 @@
   color: #ff6f00;
   background-color: #fff9f3cc;
 }
-
+.article-content {
+  .highlight {
+    padding: var(--card-padding);
+    pre {
+      width: auto;
+      max-height: 20em;
+    }
+  }
+}
 // .widget {
 //     max-height: 100vh;
 //     overflow-y: auto;
