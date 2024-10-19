@@ -80,6 +80,131 @@
     }
   }
 }
+//为代码块顶部添加macos样式
+.article-content {
+  .highlight:before {
+    content: "";
+    display: block;
+    background: url(/img/code-header.svg);
+    height: 32px;
+    width: 100%;
+    background-size: 57px;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    background-position: -1px 2px;
+  }
+}
+
+.tagCloud {
+  .tagCloud-count {
+    color: var(--body-text-color);
+  }
+}
+
+.copyCodeButton {
+  border-radius: var(--category-border-radius);
+}
+
+code {
+  border-radius: var(--category-border-radius);
+}
+
+.article-category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  a {
+    background: var(--card-background);
+    box-shadow: var(--shadow-l1);
+    border-radius: var(--category-border-radius);
+    padding: 8px 20px;
+    color: var(--card-text-color-main);
+    font-size: 1.4rem;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: var(--shadow-l2);
+    }
+  }
+}
+
+/* Category widget */
+.category {
+  .category-label {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    a {
+      border-left: 6px solid;
+      background: var(--card-background);
+      box-shadow: var(--shadow-l1);
+      border-radius: var(--category-border-radius);
+      padding: 12px 20px;
+      color: var(--card-text-color-main);
+      font-size: 1.5rem;
+      transition: box-shadow 0.3s ease;
+
+      &:hover {
+        box-shadow: var(--shadow-l2);
+      }
+    }
+  }
+  .category-count {
+    color: var(--body-text-color);
+  }
+}
+
+.running-time {
+  color: var(--card-text-color-secondary);
+  font-weight: normal;
+
+  .running-days {
+    font-weight: bold;
+    color: var(--emphasize-text-color);
+  }
+}
+
+.totalcount {
+  color: var(--card-text-color-secondary);
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+code {
+  border-radius: var(--tag-border-radius);
+  font-size: 14px; // Add font size setting for code block
+  font-family: var(--code-font-family);
+}
+
+.article-subtitle {
+  margin-top: -5px;
+  font-size: 1.5rem;
+
+  @include respond(md) {
+    font-size: 1.6rem;
+  }
+}
+
+/*头像旋转动画*/
+.sidebar header .site-avatar .site-logo {
+  transition: transform 1.65s ease-in-out; //旋转时间
+}
+
+.sidebar header .site-avatar .site-logo:hover {
+  transform: rotate(360deg); //旋转角度为360度
+}
+
+/*社交菜单居中*/
+.social-menu svg {
+  gap: 15px;
+  justify-content: center;
+  width: 30px;
+  height: 25px; //社交菜单大小
+  stroke: var(--body-text-color);
+  stroke-width: 1.33;
+}
 @media (min-width: 1024px) {
   .article-list--compact {
     display: grid;
