@@ -181,15 +181,15 @@ a {
   }
 
   .right-sidebar {
-    order: -1;
-    max-width: var(--right-sidebar-max-width);
+    max-height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 
-    /// Display right sidebar when min-width: lg
-    @include respond(lg) {
-      display: flex;
+    &::-webkit-scrollbar {
+      display: none;
     }
   }
-
   &.extended {
     @include respond(md) {
       max-width: 1024px;
