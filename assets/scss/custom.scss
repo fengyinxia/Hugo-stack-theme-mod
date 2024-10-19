@@ -171,56 +171,14 @@ a {
 
 //--------------------------------------------------
 //页面三栏宽度调整
-.container {
-  margin-left: auto;
-  margin-right: auto;
+.right-sidebar {
+  max-height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 
-  .left-sidebar {
-    order: -3;
-    max-width: var(--left-sidebar-max-width);
-  }
-
-  .right-sidebar {
-    max-height: 100vh;
-    overflow-y: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-  &.extended {
-    @include respond(md) {
-      max-width: 1024px;
-      --left-sidebar-max-width: 25%;
-    }
-
-    @include respond(lg) {
-      max-width: 1280px;
-      --left-sidebar-max-width: 20%;
-    }
-
-    @include respond(xl) {
-      max-width: 1453px; //1536px;
-      --left-sidebar-max-width: 15%;
-    }
-  }
-
-  &.compact {
-    @include respond(md) {
-      --left-sidebar-max-width: 25%;
-      max-width: 768px;
-    }
-
-    @include respond(lg) {
-      max-width: 1024px;
-      --left-sidebar-max-width: 20%;
-    }
-
-    @include respond(xl) {
-      max-width: 1280px;
-    }
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
 
