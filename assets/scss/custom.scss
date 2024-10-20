@@ -57,7 +57,11 @@
 .sidebar header .site-avatar .site-logo:hover {
   transform: rotate(360deg); //旋转角度为360度
 }
-
+.tagCloud {
+  .tagCloud-count {
+      color: var(--body-text-color);
+  }
+}
 /*社交菜单居中*/
 .social-menu svg {
   gap: 15px;
