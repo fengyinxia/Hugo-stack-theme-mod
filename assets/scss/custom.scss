@@ -34,7 +34,7 @@
   }
 }
 //首页欢迎板块样式
-.welcome {
+.welcome-banner {
   background-color: #fff;
   border-radius: 30px;
   padding: 10px 20px;
@@ -42,7 +42,9 @@
   text-align: center;
   font-size: 1.2em;
   margin: 20px auto;
-  max-width: 600px;
+  max-width: 800px; /* 调整为与下方内容一致的宽度 */
+  height: 40px; /* 设置为下方内容一半的高度 */
+  line-height: 40px; /* 垂直居中 */
 }
 .welcome strong {
   color: #f39c12;
