@@ -33,6 +33,15 @@
     display: none;
   }
 }
+//首页欢迎板块样式
+.welcome {
+  color: var(--card-text-color-main);
+  background: var(--card-background);
+  box-shadow: var(--shadow-l2);
+  border-radius: 30px;
+  display: inline-block;
+}
+
 
 /*头像旋转动画*/
 .sidebar header .site-avatar .site-logo {
