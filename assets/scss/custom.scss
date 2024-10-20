@@ -33,23 +33,7 @@
     display: none;
   }
 }
-//首页欢迎板块样式
-.welcome {
-  color: var(--card-text-color-main);
-  background: var(--card-background);
-  box-shadow: var(--shadow-l2);
-  border-radius: 30px;
-  display: inline-block;
-  padding: 10px 20px;
-  text-align: center;
-  font-size: 1.2em;
-  margin: 20px auto;
-  max-width: 800px;
-  height: 40px;
-  line-height: 40px;
-  overflow: hidden;
-  white-space: nowrap;
-}
+
 
 
 /*头像旋转动画*/
